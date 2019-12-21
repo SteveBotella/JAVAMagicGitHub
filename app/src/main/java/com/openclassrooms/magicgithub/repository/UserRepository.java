@@ -4,6 +4,7 @@ import com.openclassrooms.magicgithub.api.ApiService;
 import com.openclassrooms.magicgithub.model.User;
 
 import java.util.List;
+import java.util.Random;
 
 public class UserRepository {
 
@@ -15,14 +16,17 @@ public class UserRepository {
 
     public List<User> getUsers() {
         // TODO: A modifier
+        this.apiService.getUsers();
         return null;
     }
 
     public void generateRandomUser() {
         // TODO: A modifier
+        this.apiService.generateRandomUser();
     }
 
     public void deleteUser(User user) {
         // TODO: A modifier
+        this.apiService.deleteUser(user.random());
     }
 }
